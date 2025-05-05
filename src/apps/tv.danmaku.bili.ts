@@ -1,0 +1,22 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'tv.danmaku.bili',
+  name: '哔哩哔哩',
+  groups: [
+    {
+      key: 0,
+      name: '局部广告',
+      activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+      rules: [
+        {
+          key: 0,
+          name: '直播间-悬浮广告',
+          fastQuery: true,
+          matchTime: 5000,
+          matches: 'ImageView[vid="live_game_card_close"]',
+        },
+      ],
+    },
+  ],
+});

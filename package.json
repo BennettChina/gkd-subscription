@@ -1,11 +1,11 @@
 {
-  "name": "@gkd-kit/subscription-template",
-  "version": "0.0.0",
+  "name": "@bennettchina/gkd-subscription",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "postinstall": "simple-git-hooks",
-    "format": "prettier --cache --write ./**/*.{js,cjs,mjs,ts,jsx,tsx,json}",
-    "lint": "eslint --cache --fix ./**/*.{js,cjs,mjs,ts,jsx,tsx}",
+    "format": "prettier --cache --write ./**/*.{ts,cjs,mjs,js,jsx,tsx,json}",
+    "lint": "eslint --cache --fix ./**/*.{ts,cjs,mjs,js,jsx,tsx}",
     "check": "tsc --noEmit && tsx ./scripts/check.ts",
     "build": "tsc --noEmit && tsx ./scripts/build.ts"
   },
