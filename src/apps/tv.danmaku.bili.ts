@@ -33,7 +33,7 @@ export default defineGkdApp({
           matchTime: 5000,
           matches:
             'ImageView[id="tv.danmaku.bili:id/live_play_together_close"]',
-          snapshotUrls: ['https://i.gkd.li/i/20230038'],
+          snapshotUrls: ['https://i.gkd.li/i/20231449'],
         },
       ],
     },
