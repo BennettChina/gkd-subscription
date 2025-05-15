@@ -5,9 +5,9 @@ import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
   id: 614090852,
-  name: 'Subscription',
+  name: 'Bennett的GKD订阅',
   version: 0,
-  author: 'author',
+  author: 'BennettChina',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/BennettChina/gkd-subscription/issues',
   categories,

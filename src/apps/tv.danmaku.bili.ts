@@ -14,7 +14,17 @@ export default defineGkdApp({
           name: '直播间-悬浮广告',
           fastQuery: true,
           matchTime: 5000,
-          matches: 'ImageView[vid="live_game_card_close"]',
+          matches: 'ImageView[vid="live_game_card_close"][clickable=true]',
+          snapshotUrls: ['https://i.gkd.li/i/20230038'],
+        },
+        {
+          key: 1,
+          name: '直播间-增送礼物提示',
+          fastQuery: true,
+          matchTime: 5000,
+          matches:
+            'ImageView[id="tv.danmaku.bili:id/iv_pop_rank_guide_card_close"][clickable=true]',
+          snapshotUrls: ['https://i.gkd.li/i/20230038'],
         },
       ],
     },
