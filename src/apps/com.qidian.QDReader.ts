@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '通知权限提示',
+      name: '通知提示-通知弹窗',
       activityIds: 'com.qidian.QDReader.ui.activity.MainGroupActivity',
       rules: [
         {
@@ -14,7 +14,7 @@ export default defineGkdApp({
           name: '通知权限提示',
           fastQuery: true,
           matchTime: 5000,
-          matches: [
+          anyMatches: [
             'ImageView[vid="closeBtn"][clickable=true]',
             'ImageView[id="com.qidian.QDReader:id/systemNotificationBottomDialogClose"][clickable=true]',
           ],
@@ -23,21 +23,11 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20230076',
           ],
         },
-        {
-          key: 1,
-          name: '签到',
-          fastQuery: true,
-          matchTime: 5000,
-          matches: [
-            'TextView[id="com.qidian.QDReader:id/button_text_id"][text="签到"]',
-          ],
-          snapshotUrls: [],
-        },
       ],
     },
     {
       key: 1,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       activityIds: 'com.qidian.QDReader.ui.activity.SplashImageActivity',
       rules: [
         {
@@ -49,6 +39,23 @@ export default defineGkdApp({
             'ImageView[id="com.qidian.QDReader:id/imgClose"][clickable=true]',
           ],
           snapshotUrls: ['https://i.gkd.li/i/20230072'],
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '功能类-签到',
+      activityIds: 'com.qidian.QDReader.ui.activity.MainGroupActivity',
+      rules: [
+        {
+          key: 0,
+          name: '签到',
+          fastQuery: true,
+          matchTime: 5000,
+          matches: [
+            'TextView[id="com.qidian.QDReader:id/button_text_id"][text="签到"]',
+          ],
+          snapshotUrls: [],
         },
       ],
     },

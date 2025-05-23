@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '局部广告',
+      name: '局部广告-悬浮广告',
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
