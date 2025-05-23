@@ -16,12 +16,22 @@ export default defineGkdApp({
           matchTime: 5000,
           matches: [
             'ImageView[vid="closeBtn"][clickable=true]',
-            'ImageView[vid="systemNotificationBottomDialogClose"][clickable=true]',
+            'ImageView[id="com.qidian.QDReader:id/systemNotificationBottomDialogClose"][clickable=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/20230064',
             'https://i.gkd.li/i/20230076',
           ],
+        },
+        {
+          key: 1,
+          name: '签到',
+          fastQuery: true,
+          matchTime: 5000,
+          matches: [
+            'TextView[id="com.qidian.QDReader:id/button_text_id"][text="签到"]',
+          ],
+          snapshotUrls: [],
         },
       ],
     },
