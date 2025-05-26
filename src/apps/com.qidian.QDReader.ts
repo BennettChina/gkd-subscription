@@ -51,7 +51,7 @@ export default defineGkdApp({
           key: 0,
           name: '签到',
           fastQuery: true,
-          matchDelay: 5000,
+          matchDelay: 2000,
           matchTime: 5000,
           matches: [
             'TextView[id="com.qidian.QDReader:id/button_text_id"][text="签到"]',
