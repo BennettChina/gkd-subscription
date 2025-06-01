@@ -7,7 +7,10 @@ export default defineGkdApp({
     {
       key: 0,
       name: '通知提示-通知弹窗',
-      activityIds: 'com.qidian.QDReader.ui.activity.MainGroupActivity',
+      activityIds: [
+        'com.qidian.QDReader.ui.activity.MainGroupActivity',
+        'com.qidian.QDReader.ui.activity.new_msg.NewMsgCenterActivity',
+      ],
       rules: [
         {
           key: 0,
