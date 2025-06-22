@@ -14,7 +14,8 @@ export default defineGkdApp({
           name: '直播间-游戏下载广告',
           fastQuery: true,
           matchTime: 5000,
-          matches: 'ImageView[vid="live_game_card_close"][clickable=true]',
+          matches:
+            'ImageView[id="tv.danmaku.bili.adbiz:id/live_game_card_close"][clickable=true]',
           snapshotUrls: ['https://i.gkd.li/i/20230038'],
         },
         {
