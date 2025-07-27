@@ -15,9 +15,10 @@ export default defineGkdApp({
           fastQuery: true,
           matchTime: 5000,
           matches:
-            'TextView[id="com.bbk.appstore:id/vbutton_title"][visibleToUser=true]',
+            'TextView[id="com.bbk.appstore:id/vbutton_title"][visibleToUser=true][text="进入首页"]',
         },
       ],
+      snapshotUrls: ['https://i.gkd.li/i/21451729'],
     },
   ],
 });
