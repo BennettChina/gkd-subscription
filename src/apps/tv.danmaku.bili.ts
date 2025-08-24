@@ -14,8 +14,10 @@ export default defineGkdApp({
           name: '直播间-游戏下载广告',
           fastQuery: true,
           matchTime: 5000,
-          matches:
+          anyMatches: [
             'ImageView[id="tv.danmaku.bili.adbiz:id/live_game_card_close"][clickable=true]',
+            'ImageView[id="tv.danmaku.bili:id/live_game_card_close"][clickable=true]',
+          ],
           snapshotUrls: ['https://i.gkd.li/i/20230038'],
         },
         {
@@ -35,6 +37,16 @@ export default defineGkdApp({
           matches:
             'ImageView[id="tv.danmaku.bili:id/live_play_together_close"]',
           snapshotUrls: ['https://i.gkd.li/i/20231449'],
+        },
+        {
+          key: 3,
+          name: '直播间-推荐抢购商品',
+          fastQuery: true,
+          matchTime: 5000,
+          anyMatches: [
+            'ImageView[id="tv.danmaku.bili:id/shopping_close"][clickable=true]',
+            'ImageView[id="tv.danmaku.bili.liveroom:id/shopping_close"][clickable=true]',
+          ],
         },
       ],
     },
