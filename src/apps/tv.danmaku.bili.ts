@@ -42,7 +42,6 @@ export default defineGkdApp({
           key: 3,
           name: '直播间-推荐抢购商品',
           fastQuery: true,
-          matchTime: 5000,
           anyMatches: [
             'ImageView[id="tv.danmaku.bili:id/shopping_close"][clickable=true]',
             'ImageView[id="tv.danmaku.bili.liveroom:id/shopping_close"][clickable=true]',
