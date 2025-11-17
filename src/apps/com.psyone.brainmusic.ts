@@ -14,8 +14,7 @@ export default defineGkdApp({
           name: '解锁高品质XXX',
           fastQuery: true,
           matchTime: 5000,
-          matches:
-            'TextView[id="com.psyone.brainmusic:id/itv_close"][clickable=true]',
+          matches: ['*[id="com.psyone.brainmusic:id/ll_content"] > TextView'],
           snapshotUrls: ['https://i.gkd.li/i/23550849'],
         },
       ],
@@ -39,6 +38,21 @@ export default defineGkdApp({
           fastQuery: true,
           matches: 'TextView[text="不感兴趣"]',
           snapshotUrls: ['https://i.gkd.li/i/23550897'],
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-首页 VIP 弹窗',
+      rules: [
+        {
+          key: 0,
+          name: 'VIP 弹窗',
+          fastQuery: true,
+          activityIds: 'com.psyone.brainmusic.ui.activity.MainActivity',
+          matches:
+            '@ImageView < *[id="com.psyone.brainmusic:id/layout_close"] - *[id="com.psyone.brainmusic:id/img_ad"]',
+          snapshotUrls: ['https://i.gkd.li/i/23590296'],
         },
       ],
     },
