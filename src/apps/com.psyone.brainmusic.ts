@@ -28,8 +28,14 @@ export default defineGkdApp({
           key: 0,
           name: '播放页跳转广告',
           matchTime: 5000,
-          matches: '@View -3 View[index=0] >2 TextView[text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/i/23550883'],
+          matches: [
+            '@View -3 View[index=0] >2 TextView[text="广告"]',
+            '@ImageView <2 LinearLayout < LinearLayout < FrameLayout <5 FrameLayout < FrameLayout < [vid="express_container"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23550883',
+            'https://i.gkd.li/i/23590486', // 纯畜生啊这广告，比摇一摇还恶心
+          ],
         },
         {
           preKeys: [0],
