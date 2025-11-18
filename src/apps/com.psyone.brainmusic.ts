@@ -28,7 +28,7 @@ export default defineGkdApp({
           key: 0,
           name: '播放页跳转广告',
           matchTime: 5000,
-          matches: [
+          anyMatches: [
             '@View -3 View[index=0] >2 TextView[text="广告"]',
             '@ImageView <2 LinearLayout < LinearLayout < FrameLayout <5 FrameLayout < FrameLayout < [vid="express_container"]',
           ],
