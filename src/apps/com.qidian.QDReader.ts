@@ -63,5 +63,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 3,
+      name: '通知提示-自动订阅提示',
+      desc: '订阅章节，提示开启本书自动订阅下一章功能，点击「不再提示」。',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: 'com.qidian.QDReader.ui.activity.QDReaderActivity',
+          matches:
+            '[id="com.qidian.QDReader:id/button_text_id"][text="不再提示"]',
+        },
+      ],
+    },
   ],
 });
