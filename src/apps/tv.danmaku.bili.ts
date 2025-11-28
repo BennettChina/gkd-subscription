@@ -54,11 +54,12 @@ export default defineGkdApp({
           matches: [
             '@TextView < View - *[text="弹幕口令："]',
             '@TextView[text="关注主播"] - *[text="限制条件："]',
-            '@TextView <2 View < View < WebView[text="天选时刻"]',
+            '@Image < View <4 View < View < WebView[text="天选时刻"]',
           ],
         },
         {
           key: 5,
+          order: 100,
           name: '直播间-关闭天选(30秒后未处理帮忙关闭窗口)',
           actionDelay: 30000, // 等 30 秒，未关闭或者未参与天选说明观众在忙，辅助关闭窗口
           fastQuery: true,
