@@ -47,8 +47,15 @@ export default defineGkdApp({
             'ImageView[id="tv.danmaku.bili.liveroom:id/shopping_close"][clickable=true]',
           ],
         },
+      ],
+    },
+    {
+      key: 1,
+      name: '功能类-直播间天选',
+      activityIds: 'com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3',
+      rules: [
         {
-          key: 4,
+          key: 0,
           name: '直播间-一键参与天选', // 口令+关注主播的天选自动参与
           fastQuery: true,
           matches: [
@@ -58,7 +65,7 @@ export default defineGkdApp({
           ],
         },
         {
-          key: 5,
+          key: 1,
           order: 100,
           name: '直播间-关闭天选(30秒后未处理帮忙关闭窗口)',
           actionDelay: 30000, // 等 30 秒，未关闭或者未参与天选说明观众在忙，辅助关闭窗口
