@@ -13,7 +13,7 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
           matches:
-            '[id="com.android.packageinstaller:id/deleted_file_state_cb"][text="已了解应用的风险检测结果"]',
+            '[id="com.android.packageinstaller:id/deleted_file_state_cb"][text="已了解应用的风险检测结果"][checked=false]',
         },
       ],
     },
