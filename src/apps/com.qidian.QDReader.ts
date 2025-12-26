@@ -16,7 +16,6 @@ export default defineGkdApp({
           key: 0,
           name: '通知权限提示',
           fastQuery: true,
-          matchTime: 5000,
           anyMatches: [
             'ImageView[vid="closeBtn"][clickable=true]',
             'ImageView[id="com.qidian.QDReader:id/systemNotificationBottomDialogClose"][clickable=true]',
@@ -55,7 +54,7 @@ export default defineGkdApp({
           name: '签到',
           fastQuery: true,
           matchDelay: 2000,
-          matchTime: 5000,
+          actionMaximum: 1,
           matches: [
             'TextView[id="com.qidian.QDReader:id/button_text_id"][text="签到"]',
           ],
