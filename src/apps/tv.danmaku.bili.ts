@@ -74,5 +74,46 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-视频贴片广告',
+      desc: '视频播放页下方的贴片广告',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds:
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+          matches:
+            '@[id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][desc*="广告"]',
+        },
+
+        // copy from https://github.com/AIsouler/GKD_subscription/blob/main/src/apps/tv.danmaku.bili.ts
+        {
+          preKeys: [0],
+          key: 1,
+          matches:
+            '@[clickable=true] > [text*="不感兴趣" || text="相似内容过多" || text="我不想看"]',
+          exampleUrls: 'https://e.gkd.li/23937c2d-379c-4fb5-aaee-7295bcf0afca',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17676025',
+            'https://i.gkd.li/i/17676149',
+            'https://i.gkd.li/i/17677147',
+            'https://i.gkd.li/i/18296940',
+            'https://i.gkd.li/i/18306839',
+            'https://i.gkd.li/i/20739391',
+            'https://i.gkd.li/i/24015691',
+            'https://i.gkd.li/i/24336415',
+          ],
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          matches: '[vid="close_dislike"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/80514576-3656-4dcc-89f5-5992803c8e77',
+          snapshotUrls: 'https://i.gkd.li/i/18587456',
+        },
+      ],
+    },
   ],
 });
