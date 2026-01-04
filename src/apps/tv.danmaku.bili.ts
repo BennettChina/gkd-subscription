@@ -85,7 +85,7 @@ export default defineGkdApp({
           activityIds:
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           matches:
-            '@[id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [id="tv.danmaku.bili.adbiz:id/ad_tint_frame"][desc*="广告"]',
+            '@[id="tv.danmaku.bili.adbiz:id/more_layout"] <<n [id="tv.danmaku.bili.adbiz:id/ad_tint_frame"]',
         },
 
         // copy from https://github.com/AIsouler/GKD_subscription/blob/main/src/apps/tv.danmaku.bili.ts
