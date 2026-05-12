@@ -30,6 +30,12 @@ export default defineGkdApp({
           ],
           snapshotUrls: ['https://i.gkd.li/i/27630496'],
         },
+        {
+          preKeys: [2],
+          key: 3,
+          matches: ['[id="isdismatch"][text="与我无关"]'],
+          snapshotUrls: ['https://i.gkd.li/i/27631982'],
+        },
       ],
     },
   ],
