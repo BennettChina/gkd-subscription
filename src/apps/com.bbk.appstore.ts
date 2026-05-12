@@ -12,7 +12,6 @@ export default defineGkdApp({
         {
           key: 0,
           name: '应用推荐',
-          fastQuery: true,
           matchTime: 5000,
           matches:
             '*[id="com.bbk.appstore:id/upgrade_necessary_go_recommend"][visibleToUser=true][text="进入首页"][clickable=true]',
