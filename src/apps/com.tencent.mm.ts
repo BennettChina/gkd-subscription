@@ -24,7 +24,10 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          matches: '[id="closeBtn"][text="关闭此广告"]',
+          anyMatches: [
+            '[id="closeBtn"][text="关闭此广告"]',
+            '[id="dislike"][text="不感兴趣"]',
+          ],
           snapshotUrls: ['https://i.gkd.li/i/27630496'],
         },
       ],
