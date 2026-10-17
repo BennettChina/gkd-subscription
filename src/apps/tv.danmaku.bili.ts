@@ -45,7 +45,9 @@ export default defineGkdApp({
           anyMatches: [
             'ImageView[id="tv.danmaku.bili:id/shopping_close"][clickable=true]',
             'ImageView[id="tv.danmaku.bili.liveroom:id/shopping_close"][clickable=true]',
+            'FrameLayout"[id="tv.danmaku.bili:id/card_close_container"][clickable=true]',
           ],
+          snapshotUrls: ['https://i.gkd.li/i/33599362'],
         },
       ],
     },

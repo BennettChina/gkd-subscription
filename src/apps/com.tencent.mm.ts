@@ -14,7 +14,7 @@ export default defineGkdApp({
         {
           key: 1,
           matches:
-            '@Image[id="feedbackIcon"] - [id="feedbackTag"][text="广告"]',
+            '@Image[id="feedbackIcon"][bottom<getPrev(1).height.minus(200)] - [id="feedbackTag"][text="广告"] <<n [parent=null]',
           snapshotUrls: [
             'https://i.gkd.li/i/27629927',
             'https://i.gkd.li/i/27630560',
